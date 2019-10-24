@@ -1,0 +1,23 @@
+<% include ../partials/header.ejs %>
+
+<h1>Nova Pessoa</h1>
+
+<p><a href="/pessoas">Voltar a lista pessoas</a></p>
+
+<form method="post">
+    <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="nome">
+    </div>
+    <div class="form-group">
+            <label for="nascimento">Nascimento</label>
+            <input type="text" class="form-control" id="nascimento" name="nascimento" placeholder="nascmento">
+        </div>
+        <div class="form-group">
+                <label for="cargo">Cargo</label>
+                <input type="text" class="form-control" id="cargo" name="cargo" placeholder="cargo">
+            </div>
+    <button type="submit" class="btn btn-default">Cadastrar</button>
+</form>
+
+<% include ../partials/footer.ejs %>
